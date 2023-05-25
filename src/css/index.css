@@ -28,7 +28,7 @@ body{
   }
 
   .img-height{
-    margin-left: 50px !important;
+    margin-left: 75px !important;
     height: 150px;
   }
   
@@ -83,13 +83,12 @@ body{
   .contact-me{
     border: 1px black solid;
     border-radius: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     transition: .5s;
   }
-
   .contact-me:hover{
     background: rgb(0, 110, 255);
     box-shadow: 0 0 15px rgb(0, 110, 255);
