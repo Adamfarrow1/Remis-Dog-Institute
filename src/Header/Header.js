@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const Header = () => {
     return ( 
-        <div className="header-background container-xxl d-flex justify-content-between align-items-center ">
-            <img className='img-height' src={logo} alt="" />
-            <div className='d-flex align-items-center h-100'>
+        <div className="header-background container-xxl d-flex flex-row-reverse justify-content-between align-items-center">
+            {/* <img className='img-height' src={logo} alt="" /> */}
+            <div className='d-flex align-items-center'>
                 <p className='nav-link'>Home</p>
                 <p className='nav-link'>Training Services</p>
                 <p className='nav-link'>Wedding Pet Care</p>
                 <p className='nav-link'>Etsy Shop</p>
+                <p className='nav-link'>Gallery</p>
                 <p className='nav-link'>About</p>
                 <p className='contact-me far-right' >Contact</p>
             </div>

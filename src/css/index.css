@@ -6,6 +6,7 @@
     --primary: #e0fbfc;
     --secondary: #284b63;
     font-family: 'Roboto', sans-serif;
+    background: rgb(251,237,230);
   }
 
 
@@ -17,24 +18,35 @@
 body{
     margin: 0;
     padding: 0;
-    background: var(--primary) !important;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+
+}
+
+p{
+  color: black !important;
+}
+
+.height{
+  height: 100vh;
 }
 
 
   .header-background{
-    background: var(--primary);
-    height: 150px;
+    height: 100px;
+    position: fixed;
   }
 
   .img-height{
-    margin-left: 75px !important;
-    height: 150px;
+    margin-left: 30px !important;
+    height: 100px;
   }
   
   .nav-link{
     position: relative;
-    margin-right: 40px !important;
+    color: black !important;
+    font-size: 13px !important;
+    margin-right: 60px !important;
     transition: .5s;
   }
 
@@ -55,7 +67,7 @@ body{
       left: 0;
     right: 0;
     /* must be the same as nav-link padding-right otherwise it will not align */
-      width: 50%;
+      width: 0%;
       background: black;
       
       /* optional animation */
@@ -68,11 +80,11 @@ body{
 
 .nav-link:hover{
     cursor: pointer;
-    color: rgb(0, 110, 255) !important;
+    color: rgb(250, 23, 118)  !important;
 }
   .nav-link:hover:after{
     width: 70%;
-    background: rgb(0, 110, 255) !important;
+    background: rgb(250, 23, 118)  !important;
     cursor: pointer;
   } 
 
@@ -88,11 +100,56 @@ body{
     padding-top: 4px;
     padding-bottom: 4px;
     transition: .5s;
+    color: black;
   }
   .contact-me:hover{
-    background: rgb(0, 110, 255);
-    box-shadow: 0 0 15px rgb(0, 110, 255);
-    border:1px rgb(0, 110, 255) solid;
-    color: white;
+    background: rgb(250, 23, 118);
+    box-shadow: 0 0 15px rgb(250, 23, 118);
+    border:1px rgb(250, 23, 118) solid;
+    color: white !important;
     cursor: pointer;
+  }
+  
+  .home{
+    background-image: url("../images/v1051-33b.jpg");
+    padding: 0;
+    margin: 0;
+
+
+   background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    font-family: 'Roboto', sans-serif;
+    
+
+  }
+
+
+  .dog-img-height{
+    height: 300px;
+  }
+
+  .home-text-width{
+    width: 900px;
+    font-size: 14px;
+  }
+
+  .home-h1{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .homeCarousel{
+    background: rgb(251,237,230);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    font-family: 'Roboto', sans-serif;
+
   }
