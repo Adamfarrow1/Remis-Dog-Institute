@@ -28,8 +28,6 @@ body{
     padding: 0;
     width: 100%;
     background: rgb(251,237,230);
-
-
 }
 
 p{
@@ -41,9 +39,11 @@ p{
 }
 
 
+
   .header-background{
+    z-index: 999;
     height: 75px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     padding: 0 !important;
     margin: 0 !important;
@@ -52,7 +52,15 @@ p{
 
   .img-height{
     margin-left: 30px !important;
-    height: 100px;
+    margin-right: 15px;
+    height: 65px !important;
+  }
+
+  .logo-name{
+    color: white !important;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 13px;
+    margin: 0 !important;
   }
   
   .nav-link{
@@ -82,7 +90,7 @@ p{
     right: 0;
     /* must be the same as nav-link padding-right otherwise it will not align */
       width: 0%;
-      background: black;
+      background: rgb(250, 198, 172) ;
       
       /* optional animation */
       -o-transition:.5s;
@@ -130,6 +138,8 @@ p{
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
+    margin: 0 !important;
+    padding-right: 0 !important;
     width: 100vw !important;
     height:100vh !important;  /* responsive height */
 
@@ -152,8 +162,8 @@ p{
   .carousel-h1{
     color: black !important;
     font-size: 30px;
-    font-weight: 800px ;
-    margin-bottom: 30px;
+    font-weight: 800px;
+    margin-bottom: 0 !important;
   }
 
   .home-h1{
@@ -195,14 +205,19 @@ p{
   }
 
   .img{
-    width: auto !important;
+    width: 300px !important;
+    height: 450px !important;
+  }
+
+  .img-spc{
+    transition: .5s;
+    width: 300px !important;
+    padding-top: 105px;
+    padding-bottom: 105px;
     height: auto !important;
   }
 
-  .carouselWidth{
-    width: 500px;
-    padding-top: 75px;
-  }
+
 
   .info-cta{
     height: 300px;
@@ -261,6 +276,7 @@ p{
     
     /* center - (optional) use with adjusting width   */
     margin: 0 auto;
+    padding: 0 !important;
     left: 0px;
     right: 0;
     width: 100px;
@@ -279,10 +295,33 @@ p{
 .info-cta-obedience{
   height: 350px;
   width: 300px;
-
+  font-size: 20px; 
   border: 1px rgb(250, 198, 172) solid;
   box-shadow: 20px rgb(250, 198, 172);
   border-radius: 16px;
   text-align: center;
 }
+
+
+.info-text{
+  font-size: 16px ;
+}
   
+
+.footer{
+  height: 150px;
+
+  background: rgba(250, 198, 172, 0.582);
+}
+
+.footer-img{
+  height: 50px;
+  width: 50px;
+  margin: 0 25px;
+}
+
+.footer-img-fb{
+  height: 45px;
+  width: 45px;
+  margin: 0 25px;
+}

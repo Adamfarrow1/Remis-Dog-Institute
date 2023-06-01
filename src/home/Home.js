@@ -4,7 +4,7 @@ import dog1 from '../images/dog-img-1.webp'
 const Home = () => {
     return ( 
         <div className="home text-center row align-items-center">
-                <div className=" align-self-center bg text-center col-6 d-flex flex-column justify-content-center align-items-center height bg">
+                <div className=" align-self-center text-center col-6 d-flex flex-column justify-content-center align-items-center height">
                     <h1 className='home-h1 text-center'>"A Trained Dog is a Happy Dog!"</h1>
                     {/* <h1 className='home-h1'>Remi's Dog Training Institute</h1> */}
                     {/* <p className='text-center home-text-width'>"A Trained Dog is a Happy Dog!"</p>                 */}
