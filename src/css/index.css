@@ -6,7 +6,15 @@
     --primary: #e0fbfc;
     --secondary: #284b63;
     font-family: 'Roboto', sans-serif;
-    background: rgb(251,237,230);
+
+  }
+
+  #root{
+    background: white !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -19,6 +27,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    background: rgb(251,237,230);
 
 
 }
@@ -33,8 +42,12 @@ p{
 
 
   .header-background{
-    height: 100px;
+    height: 75px;
+    width: 100%;
     position: fixed;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.205);
   }
 
   .img-height{
@@ -44,9 +57,10 @@ p{
   
   .nav-link{
     position: relative;
-    color: black !important;
+    color: white !important;
     font-size: 13px !important;
     margin-right: 60px !important;
+    margin-bottom: 0 !important;
     transition: .5s;
   }
 
@@ -80,11 +94,11 @@ p{
 
 .nav-link:hover{
     cursor: pointer;
-    color: rgb(250, 23, 118)  !important;
+    color: white !important;
 }
   .nav-link:hover:after{
     width: 70%;
-    background: rgb(250, 23, 118)  !important;
+    background: rgb(250, 198, 172)  !important;
     cursor: pointer;
   } 
 
@@ -93,33 +107,33 @@ p{
   }
 
   .contact-me{
-    border: 1px black solid;
+    margin-bottom: 0 !important;
+    border: 1px white solid;
     border-radius: 10px;
     padding-right: 16px;
     padding-left: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
     transition: .5s;
-    color: black;
+    color: white !important;
   }
   .contact-me:hover{
-    background: rgb(250, 23, 118);
-    box-shadow: 0 0 15px rgb(250, 23, 118);
-    border:1px rgb(250, 23, 118) solid;
+    background: rgb(250, 198, 172);
+    box-shadow: 0 0 15px rgb(250, 198, 172);
+    border:1px rgb(250, 198, 172) solid;
     color: white !important;
     cursor: pointer;
   }
   
   .home{
-    background-image: url("../images/v1051-33b.jpg");
-    padding: 0;
-    margin: 0;
+    background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.295)), url("../images/bg.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100vw !important;
+    height:100vh !important;  /* responsive height */
 
 
-   background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;  
-    font-family: 'Roboto', sans-serif;
     
 
   }
@@ -130,21 +144,28 @@ p{
   }
 
   .home-text-width{
-    width: 900px;
+    width: 600px;
+    color: white !important;
     font-size: 14px;
   }
 
+  .carousel-h1{
+    color: black !important;
+    font-size: 30px;
+    font-weight: 800px ;
+    margin-bottom: 30px;
+  }
+
   .home-h1{
-    color: black;
-    font-size: 50px;
+    color: white !important;
+    font-size: 45px;
     margin-bottom: 30px;
   }
 
   .homeCarousel{
-    background: rgb(251,237,230);
+    background: white;
     padding: 0;
     margin: 0;
-    height: 100vh;
     width: 100vw;
 
     background-size:     cover;                      /* <------ */
@@ -153,3 +174,115 @@ p{
     font-family: 'Roboto', sans-serif;
 
   }
+
+
+  .home-cta{
+    border: 1px rgb(250, 178, 142) solid; 
+    color: white !important;
+    padding: 7px 10px;
+    border-radius: 16px;
+    font-size: 18px;
+    transition: .5s;
+  }
+
+  .home-cta:hover{
+    background: rgb(250, 198, 172);
+    border: 1px rgb(250, 198, 172) solid;
+    color: white !important;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(255, 177, 139);
+    letter-spacing: .1em;
+  }
+
+  .img{
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .carouselWidth{
+    width: 500px;
+    padding-top: 75px;
+  }
+
+  .info-cta{
+    height: 300px;
+    width: 300px;
+
+    border: 1px rgb(250, 198, 172) solid;
+    box-shadow: 20px rgb(250, 198, 172);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .info-header{
+    color: black !important;
+    font-size: 20px; 
+  }
+
+
+  .carousel-cta{
+    border: 1px rgb(250, 178, 142) solid; 
+    color: black !important;
+    padding: 7px 10px;
+    border-radius: 16px;
+    text-align: center;
+    width: 170px;
+    font-size: 18px;
+    transition: .5s;
+  }
+
+
+  
+  .carousel-cta:hover{
+    background: rgb(250, 198, 172);
+    border: 1px rgb(250, 198, 172) solid;
+    color: white !important;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(255, 177, 139);
+    letter-spacing: .1em;
+  }
+
+  .underline{
+    position: relative;
+  }
+
+
+  .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px; 
+
+
+   /****** 
+   optional values below 
+   ******/
+    
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0px;
+    right: 0;
+    width: 100px;
+    background: rgb(250, 198, 172);
+  
+  /* optional animation */
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+
+
+.info-cta-obedience{
+  height: 350px;
+  width: 300px;
+
+  border: 1px rgb(250, 198, 172) solid;
+  box-shadow: 20px rgb(250, 198, 172);
+  border-radius: 16px;
+  text-align: center;
+}
+  
