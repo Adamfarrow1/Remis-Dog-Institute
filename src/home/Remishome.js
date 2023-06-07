@@ -8,7 +8,7 @@ import dog3 from '../images/dog-img-3.webp'
 const Remishome = () => {
     return ( 
         <div className="remis-height mx-auto text-center">
-            <p className='carousel-h1 text-center underline mb-5 mt-2'>About Us</p>
+            <p className='carousel-h1 text-center underline mb-5 mt-2'>Remi's Story</p>
 
             <div className='row align-items-center justify-content-around'>
                 <div className='col-12 col-lg-5'>

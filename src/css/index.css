@@ -63,15 +63,39 @@ p{
     font-size: 13px;
     margin: 0 !important;
   }
+
+  .td-none{
+    text-decoration: none !important;
+  }
   
   .nav-link{
+    
     position: relative;
     color: white !important;
     font-size: 13px !important;
     margin-right: 60px !important;
     margin-bottom: 0 !important;
     transition: .5s;
+
+    background-color: none;
   }
+
+  .font-size{
+    font-size: 13px !important;
+  }
+
+  .font-size-mobile{
+    font-size: 13px !important;
+    color: black !important;
+  }
+
+
+  .bg-none{
+    background: none !important;
+    border: none !important;
+  }
+
+
 
   .nav-link:after {
     position: absolute;
@@ -144,10 +168,6 @@ p{
     padding-right: 0 !important;
     width: 100vw !important;
     height:100vh !important;  /* responsive height */
-
-
-    
-
   }
 
 
@@ -389,11 +409,7 @@ p{
   margin-left: 10px;
 }
 
-.nav-link-mobile{
-  color: black;
-  position: relative !important;
-  transition: .5s;
-}
+
 
 .nav-link-mobile:hover{
   cursor: pointer;
@@ -559,4 +575,40 @@ Note: Beware of modifying this element as it can break the animations - you shou
     height: auto;
     margin-top: 20px !important;
   }
+}
+
+
+
+.nav-link-mobile{
+  color: black;
+  font-size: 18px  !important;
+  position: relative !important;
+  transition: .5s;
+  padding: 0 !important;
+  margin: 15px 0px !important;
+}
+
+.p-none{
+  font-size: 18px !important;
+  padding: 0 !important;
+  color: white;
+}
+
+
+.dropdown-bg{
+  background: rgba(61, 61, 61, 0.808) !important ;
+}
+
+.dropdown-color{
+  color: white !important;
+}
+
+
+.dropdown-color:hover{
+  color: black !important;
+}
+
+.dropdown-color:active{
+  color: black !important;
+  background: white !important ;
 }
