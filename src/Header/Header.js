@@ -6,6 +6,7 @@ import menu from '../images/menu.png'
 import { useState } from 'react';
 import { push as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom';
+import menubtn from '../images/menu.svg'
 
 import { CNavbar,CNavbarToggler,CNavLink, CContainer, Cnavbarbrand, CCollapse, CNavbarBrand, CNavbarNav,CDropdown,CDropdownToggle,CDropdownMenu,CDropdownItem,CDropdownDivider  } from '@coreui/react';
 
@@ -31,6 +32,18 @@ const Header = () => {
         console.log(display)
     }
 
+
+
+    const [isOpen, setOpen] = useState(false)
+
+    const handleIsOpen = () => {
+      setOpen(!isOpen)
+    }
+  
+    const closeSideBar = () => {
+        console.log("close")
+      setOpen(false)
+    }
 
     return ( 
         <div className="header-background d-flex justify-content-between align-items-center">
@@ -71,33 +84,24 @@ const Header = () => {
             </div>
              :
             <>
-                <Menu right>
+                <Menu right isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen} customBurgerIcon={ <img src= {menubtn} /> }>
                     
-                    <p className='nav-link-mobile'>Home</p>
-
-
-
-
-                    
+                   <Link className='nav-link-mobile td-none' onClick={closeSideBar} to={'/'}>Home</Link>
 
                     <CDropdown className='nav-link-mobile p-none'>
                     <CDropdownToggle color="secondary bg-none font-size-mobile p-none">Training Services</CDropdownToggle>
                     <CDropdownMenu>
-                        <CDropdownItem component="button">Puppy Basics</CDropdownItem>
+                       <Link onClick={() => {closeSideBar()}} to='puppy-basics' className='mx-auto td-none'><CDropdownItem component="button">Puppy Basics</CDropdownItem></Link>
                         <CDropdownItem component="button">Basic Obedience</CDropdownItem>
                     </CDropdownMenu>
                 </CDropdown>
 
-
-
-
-
                     {/* <p className='nav-link-mobile'>Training Services</p> */}
-                    <p className='nav-link-mobile'>Wedding Pet Care</p>
-                    <p className='nav-link-mobile'>Etsy Shop</p>
-                    <p className='nav-link-mobile'>Gallery</p>
-                    <p className='nav-link-mobile'>About</p>
-                    <p className='nav-link-mobile' >Contact</p>
+                    <p onClick={closeSideBar} className='nav-link-mobile'>Wedding Pet Care</p>
+                    <p onClick={closeSideBar} className='nav-link-mobile'>Etsy Shop</p>
+                    <p onClick={closeSideBar} className='nav-link-mobile'>Gallery</p>
+                    <p onClick={closeSideBar} className='nav-link-mobile'>About</p>
+                    <p onClick={closeSideBar} className='nav-link-mobile' >Contact</p>
                 </Menu>
            </>
              }

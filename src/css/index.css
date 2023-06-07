@@ -409,6 +409,10 @@ p{
   margin-left: 10px;
 }
 
+.nav-link-mobile{
+color: black !important;
+}
+
 
 
 .nav-link-mobile:hover{
