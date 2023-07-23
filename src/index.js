@@ -12,10 +12,14 @@ import Remishome from './home/Remishome';
 import HomePage from './pages/HomePage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PuppyBasics from './pages/Training/PuppyBasics';
+import PuppyBasics from './PuppyBasics/PuppyBasics';
 
 import ScrollToTop from './customhooks/ScrollToTop';
-
+import BasicObedience from './BasicObedience/BasicObedience';
+import WeddingCare from './WeddingCare/WeddingCare';
+import Contact from './Contact/Contact';
+import EtsyShop from './EtsyShop/EtsyShop';
+import Gallery from './gallery/Gallery';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
@@ -25,6 +29,11 @@ root.render(
         <Routes>
             <Route path="/" index element={ <><ScrollToTop/> <HomePage /></>} />
             <Route path="puppy-basics" index element={<><ScrollToTop/><PuppyBasics/></>} />
+            <Route path="basic-obedience" index element={<><ScrollToTop/><BasicObedience/></>} />
+            <Route path="weddingcare" index element={<><ScrollToTop/><WeddingCare/></>} />
+            <Route path="contact" index element={<><ScrollToTop/><Contact/></>} />
+            <Route path="etsyshop" index element={<><ScrollToTop/><EtsyShop/></>} />
+            <Route path="gallery" index element={<><ScrollToTop/><Gallery/></>} />
         </Routes>
         <Footer/>
     </BrowserRouter>

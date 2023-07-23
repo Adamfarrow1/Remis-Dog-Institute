@@ -11,13 +11,7 @@ const HomeCarousel = () => {
 
             <div className='col-12'>
                 <div className='row justify-content-around align-items-center'>
-                    <div className='shadow info-cta col-lg-3 col-12'>
-                        <div>
-                            <p className='info-header mb-5 mt-2 underline'>Wedding Care</p>
-                            <p className='info-text'>Need a helping paw on your wedding day? Check out the Wedding Pet Care Service!</p>
-                        </div>
-                        <p className='mt-5 mx-auto carousel-cta info-header'>Read More</p>
-                    </div>
+                    
                     <div className='shadow info-cta col-lg-3 col-12'>
 
                         <div>
@@ -41,6 +35,13 @@ const HomeCarousel = () => {
                         this will be used for signing up for dog training
                         https://forms.gle/LDZDk7zYJab6ieCa7  
                          */}
+                    </div>
+                    <div className='shadow info-cta col-lg-3 col-12'>
+                        <div>
+                            <p className='info-header mb-5 mt-2 underline'>Wedding Care</p>
+                            <p className='info-text'>Need a helping paw on your wedding day? Check out the Wedding Pet Care Service!</p>
+                        </div>
+                        <p className='mt-5 mx-auto carousel-cta info-header'>Read More</p>
                     </div>
                 </div>
 

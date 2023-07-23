@@ -58,6 +58,7 @@ p{
     height: 65px !important;
   }
 
+  
 
 
   .logo-name{
@@ -190,14 +191,178 @@ p{
     height:100vh !important;  /* responsive height */
 }
 
+
+.ob{
+
+  background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.295)), url("../images/ob.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;  /* responsive height */
+}
+
+
+.wedding{
+  background-image: linear-gradient(rgba(48, 47, 47, 0.5), rgba(0, 0, 0, 0.623)), url("../images/bgwedding-transformed.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;  /* responsive height */
+}
+
+
+.contact{
+  background-image: linear-gradient(rgba(48, 47, 47, 0.712), rgba(0, 0, 0, 0.74)), url("../images/bg.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;  /* responsive height */
+}
+
+.etsy{
+  background: rgb(250, 238, 232);
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+}
+
+
+.etsy-img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.etsy-header{
+  color: black !important;
+  text-align: center;
+}
+
+.etsy-margin-top{
+  padding-top: 80px;
+}
+
+.etsy-main-width{
+  width: 80% !important;
+}
+
+.etsy-p{
+  color: black !important;
+  width: 300px;
+  font-size: 13px;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+
+.etsy-p-h{
+  height: 48px;
+}
+
+.etsy-width{
+  width: 300px;
+}
+
+
+.etsy-title{
+  font-size: 35px;
+}
+
+.etsy-btn{
+  border: rgb(250, 198, 172) 1px solid;
+  text-align: center;
+  color: black !important;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  transition: .5s;
+}
+
+.etsy-btn:hover{
+  cursor: pointer;
+  background: rgb(250, 198, 172);
+  color: black !important;
+}
+
+.gallery-title{
+  font-size: 25px;
+}
+
+.gallery-img{
+  height: 270px;
+  width: 200px;
+
+}
+
+.mt-gal{
+  margin-top: 0 !important;
+}
+
+.gallery-width{
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-img-sp{
+  height: 270px;
+  width: 220px;
+}
+
+.align-left{
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+
 .padding-margin-0{
   padding: 0 !important;
   margin: 0 !important;
   width: 100vw !important;
 }
 
+.pb-container-w{
+  width: 70%;
+}
 
 
+.gallery{
+  background: rgb(250, 238, 232);
+  padding-right: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+}
+
+
+.gal-p{
+  width: 200px;
+}
+
+
+
+.contact-form{
+  margin-top: 65px !important;
+  height: 525px;
+  width: 750px !important;
+  border-radius: 16px;
+  background: rgba(247, 228, 228, 0.849) !important;
+}
 
 
 
@@ -246,6 +411,12 @@ p{
     margin-bottom: 30px;
   }
 
+  .contact-h1{
+    color: black !important;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
   .pb-h1{
     color: white !important;
     font-size: 50px;
@@ -285,6 +456,10 @@ p{
     letter-spacing: .1em;
   }
 
+
+
+
+
   .img{
     width: 300px !important;
     height: 350px !important;
@@ -312,6 +487,58 @@ p{
     border-radius: 16px;
     text-align: center;
   }
+
+  .mt-auto{
+    
+  }
+
+  .pb-text{
+    height: 300px;
+    width: 375px !important;
+  }
+
+  .info-cta-wc{
+    height: 350px;
+    width: 375px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px rgb(250, 198, 172) solid;
+    box-shadow: 20px rgb(250, 198, 172);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .wc-text-width{
+    width: 80%;
+  }
+
+.wc-div-size{
+  width: 40%;
+}
+.align-ul-center{
+  text-align: center !important;
+
+}
+
+  .ob-info-cta{
+    height: 340px;
+    width: 575px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .center{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+
+
 
   .info-header{
     color: black !important;
@@ -374,6 +601,50 @@ p{
     -webkit-transition:.5s;
     transition:.5s;
 }
+
+
+
+
+.underline-r{
+  position: relative;
+}
+
+
+.underline-r:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+/* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px; 
+
+
+ /****** 
+ optional values below 
+ ******/
+  
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  padding: 0 !important;
+  left: 0px;
+  right: 0;
+  width: 75px;
+  background: white;
+
+/* optional animation */
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.pb-font-size-header2{
+  font-size: 25px;
+}
+
+
+
+
 
 
 
@@ -451,6 +722,53 @@ p{
   font-family: 'Roboto', sans-serif;
 }
 
+
+.marging-right{
+  margin-right: 10px !important;
+
+}
+
+
+.input-field{
+  display: block;
+  width: 300px;
+  font-size: 14px;
+  border-radius: 4px;
+  padding-left: 5px;
+  border: none;
+}
+
+.input-field-l{
+  display: block;
+  width: 500px;
+  font-size: 14px;
+  resize: none;
+  border-radius: 4px;
+  padding-left: 5px;
+  border: none;
+}
+
+.submit-btn{
+  border: none;
+  border-radius: 16px;
+  background: rgb(250, 198, 172);
+  padding: 5px 30px;
+  font-size: 20px;
+  transition: .5s;
+}
+
+.submit-btn:hover{
+
+    color: white !important;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(255, 177, 139);
+    letter-spacing: .1em;
+
+}
+
+
+
+
 .footer-img-fb{
   height: 45px;
   width: 45px;
@@ -483,11 +801,12 @@ p{
   background: rgba(250, 198, 172, 0.555);
   color: black !important;
   border-radius: 10px;
-  height: 300px;
+  height: auto;
   max-width: 90% !important;
   margin-top: 20px !important;
   padding:  40px 0px 10px 10px !important;
 }
+
 
 .remis-text{
   font-size: 17px;
@@ -679,6 +998,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
+@media screen and (max-width: 485px) {
+  .remis-container{
+    width: 80% !important;
+  }
+}
+
 
 
 @media screen and (max-width: 440px) {
@@ -734,4 +1059,26 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .dropdown-color:active{
   color: black !important;
   background: white !important ;
+}
+
+
+.pb-text{
+  color: black;
+}
+.pb-img-height{
+  height: 300px;
+  width: 375px;
+  border-radius: 16px !important;
+}
+
+.pb-text-width{
+  width: 90%;
+}
+
+.pb-font-size-header{
+  font-size: 20px;
+}
+
+.pb-font-size{
+  font-size: 16px;
 }
