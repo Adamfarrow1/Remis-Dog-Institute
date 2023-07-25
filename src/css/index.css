@@ -11,12 +11,11 @@
 
 
   #root{
-    background: white !important;
+    background: rgb(250, 238, 232) !important;
     padding: 0;
     overflow: hidden !important;
     margin: 0;
   }
-
 
 
 
@@ -58,7 +57,45 @@ p{
     height: 65px !important;
   }
 
+
+
+  .owner-header-width{
+    width: 80%;
+  }
+
+  .owner-sub-width{
+    width: 480px;
+  }
+
+
+  .owner-text-size{
+    font-size: 18px;
+  }
+
+  .owner-text-name{
+    font-size: 30px ;
+  }
+
+  .owner-img-size{
+    height: 350px;
+  }
+
+  .owner-title{
+    font-size: 26px;
+  }
+
+  .owner-sub-wid{
+    width: 400px;
+  }
   
+
+  .we-title{
+    font-size: 20px;
+  }
+
+  .owner-col-width{
+    width: 65%;
+  }
 
 
   .logo-name{
@@ -251,7 +288,7 @@ p{
 }
 
 .etsy-margin-top{
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 .etsy-main-width{
@@ -301,7 +338,7 @@ p{
 }
 
 .gallery-title{
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .gallery-img{
@@ -323,6 +360,19 @@ p{
   height: 270px;
   width: 220px;
 }
+
+.grad-width{
+  width: 70%;
+}
+
+.white{
+  background: white !important;
+}
+
+.pink{
+  background: rgb(250, 238, 232) !important;
+}
+
 
 .align-left{
   text-align: left;

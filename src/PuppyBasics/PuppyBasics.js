@@ -14,7 +14,7 @@ const PuppyBasics = () => {
 
 
     return ( 
-        <div className='padding-margin-0'>
+        <div className='padding-margin-0 pink'>
             <div className="pb row">
 
                 <div className= { width <= 1210  ? styles : styles + " col-6" } >

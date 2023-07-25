@@ -62,7 +62,7 @@ const Header = () => {
 
                 
                 <CDropdown className='nav-link '>
-                    <CDropdownToggle color="secondary bg-none font-size">Training Services</CDropdownToggle>
+                    <CDropdownToggle color="secondary bg-none font-size p-0">Training Services</CDropdownToggle>
                     <CDropdownMenu className='dropdown-bg'>
                         <Link to='puppy-basics' className='mx-auto td-none'><CDropdownItem component="button" className='dropdown-color'>Puppy Basics</CDropdownItem></Link>
                         <Link to='basic-obedience' className='mx-auto td-none'><CDropdownItem component="button" className='dropdown-color'>Basic Obedience</CDropdownItem></Link>
@@ -80,7 +80,19 @@ const Header = () => {
                 
                 <Link to='etsyshop' className='td-none'><p className='nav-link'>Etsy Shop</p></Link>
                 <Link to='gallery' className='td-none'><p className='nav-link'>Gallery</p></Link>
-                <p className='nav-link'>About</p>
+                
+                
+
+                <CDropdown className='nav-link '>
+                    <CDropdownToggle color="secondary bg-none font-size p-0">About</CDropdownToggle>
+                    <CDropdownMenu className='dropdown-bg'>
+                        <Link to='owners-story' className='mx-auto td-none'><CDropdownItem component="button" className='dropdown-color'>My Story</CDropdownItem></Link>
+                        <Link to='remis-story' className='mx-auto td-none'><CDropdownItem component="button" className='dropdown-color'>Remi's Story</CDropdownItem></Link>
+                    </CDropdownMenu>
+                </CDropdown>
+
+
+
                <Link to='contact' className='td-none'> <p className='contact-me far-right' >Contact</p></Link>
             </div>
              :
@@ -102,7 +114,19 @@ const Header = () => {
                     <Link to='weddingcare' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile td-none'>Wedding Pet Care</p></Link>
                     <Link to='etsyshop' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile'>Etsy Shop</p></Link>
                     <Link to='gallery' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile'>Gallery</p></Link>
-                    <p onClick={closeSideBar} className='nav-link-mobile'>About</p>
+                    
+                    
+                    <CDropdown className='nav-link-mobile p-none'>
+                    <CDropdownToggle color="secondary bg-none font-size-mobile p-none">About</CDropdownToggle>
+                    <CDropdownMenu>
+                       <Link onClick={() => {closeSideBar()}} to='remis-story' className='mx-auto td-none'><CDropdownItem component="button">Owner</CDropdownItem></Link>
+                       <Link onClick={() => {closeSideBar()}} to='owners-story' className='mx-auto td-none'><CDropdownItem component="button">Remi's Story</CDropdownItem></Link>
+                        {/* <CDropdownItem component="button">Basic Obedience</CDropdownItem> */}
+                    </CDropdownMenu>
+                    </CDropdown>
+
+
+
                     <Link to='contact' className='td-none'> <p onClick={closeSideBar} className='nav-link-mobile' >Contact</p></Link>
                 </Menu>
            </>

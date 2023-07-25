@@ -7,14 +7,14 @@ import dog3 from '../images/dog-img-3.webp'
 
 const Remishome = () => {
     return ( 
-        <div className="remis-height mx-auto text-center">
-            <p className='carousel-h1 text-center underline mb-5 mt-2'>Remi's Story</p>
+        <div className="remis-height mx-auto text-center pink">
+            <p className='carousel-h1 text-center underline mb-5 pt-2'>Remi's Story</p>
 
-            <div className='row align-items-center justify-content-around'>
+            <div className='row align-items-center justify-content-around pink'>
                 <div className='col-12 col-lg-5'>
                     <Carousel fade interval={5000} variant="dark" className=''>
                         <Carousel.Item>
-                            <img className="d-block mx-auto homeCarousel img-spc" src={dog1} alt="first image" />
+                            <img className="d-block mx-auto homeCarousel img-spc pink" src={dog1} alt="first image" />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img className="d-block mx-auto homeCarousel img" src={dog2} alt="first image" />

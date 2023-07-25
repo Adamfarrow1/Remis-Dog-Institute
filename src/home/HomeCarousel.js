@@ -5,7 +5,7 @@ import dog3 from '../images/dog-img-3.webp'
 
 const HomeCarousel = () => {
     return ( 
-        <div className="homeCarousel row align-items-center justify-content-around mx-auto ">
+        <div className="homeCarousel row align-items-center justify-content-around mx-auto pink">
 
             <p className='carousel-h1 text-center underline mb-5 mt-5'>What We Offer</p>
 

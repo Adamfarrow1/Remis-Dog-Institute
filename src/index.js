@@ -20,6 +20,8 @@ import WeddingCare from './WeddingCare/WeddingCare';
 import Contact from './Contact/Contact';
 import EtsyShop from './EtsyShop/EtsyShop';
 import Gallery from './gallery/Gallery';
+import RemisStory from './About/RemisStory';
+import Owner from './About/Owner';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
@@ -34,6 +36,8 @@ root.render(
             <Route path="contact" index element={<><ScrollToTop/><Contact/></>} />
             <Route path="etsyshop" index element={<><ScrollToTop/><EtsyShop/></>} />
             <Route path="gallery" index element={<><ScrollToTop/><Gallery/></>} />
+            <Route path="remis-story" index element={<><ScrollToTop/><RemisStory/></>} />
+            <Route path="owners-story" index element={<><ScrollToTop/><Owner/></>} />
         </Routes>
         <Footer/>
     </BrowserRouter>
