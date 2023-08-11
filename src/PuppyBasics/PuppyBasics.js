@@ -76,7 +76,7 @@ const PuppyBasics = () => {
         </div>
       </div>
 
-      <div className="service d-flex flex-column justify-content-around"data-aos="fade-in" data-aos-once="false" data-aos-delay="550" data-aos-duration="1000">
+      <div className="service d-flex flex-column justify-content-around"data-aos="fade-in" data-aos-once="false" data-aos-delay="150" data-aos-duration="1000">
         <img className='mx-auto' src={dog3} alt="Socialization" />
         <div>
             <h2>Socialization</h2>
@@ -88,7 +88,7 @@ const PuppyBasics = () => {
         </div>
       </div>
 
-      <div className="service d-flex flex-column justify-content-around"data-aos="fade-in" data-aos-once="false" data-aos-delay="650" data-aos-duration="1000">
+      <div className="service d-flex flex-column justify-content-around"data-aos="fade-in" data-aos-once="false" data-aos-delay="350" data-aos-duration="1000">
       <img className='mx-auto' src={dog4} alt="And More!" />
       <div>
             <h2>And Much More!</h2>

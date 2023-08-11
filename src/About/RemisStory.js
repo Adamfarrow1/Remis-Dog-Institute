@@ -23,9 +23,9 @@ const RemisStory = () => {
 
 
 
-            <div className="remi-profile" >
+            <div className="remi-profile font-fm" >
                 <div className="profile-header" data-aos="fade-in" data-aos-once="false" data-aos-delay="150" data-aos-duration="1000">
-                    <h1>Hey There...</h1>
+                    <h1 className="profile-h1">Hey There...</h1>
                     <p>It’s me, Remi! I’m the face you may see all over this site. My mom says I am her world. Not sure what that means but I love her and always give her all the kisses. She says I was her MUSE! Hope you get to work with my pup mom!</p>
                 </div>
 
