@@ -36,16 +36,16 @@ p{
 }
 
 .height{
-  height: 100vh;
+  height: 88vh;
 }
 
 
 
   .header-background{
     z-index: 999;
-    height: 75px;
+    height: 12vh;
     width: 100vw;
-    position: fixed;
+    /* position: fixed; */
     padding: 0 !important;
     margin: 0 !important;
     background: rgba(0, 0, 0, 0.205);
@@ -77,7 +77,9 @@ p{
   }
 
   .owner-img-size{
-    height: 350px;
+    height: auto;
+    max-height: 350px;
+    max-width: 90%;
   }
 
   .owner-title{
@@ -96,6 +98,78 @@ p{
   .owner-col-width{
     width: 65%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .remi-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .profile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-content {
+    background: rgb(252, 227, 215);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-content {
+      padding: 15px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .logo-name{
@@ -136,6 +210,23 @@ p{
     border: none !important;
   }
 
+  .remis-intro-w{
+    width: 30%;
+  }
+
+  .remis-header-img{
+    height: 400px;
+  }
+
+  .remis-story-p{
+    width: 50%;
+    font-size: 14px;
+  }
+
+
+  .hey-there{
+    font-size: 27px;
+  }
 
 
   .nav-link:after {
@@ -201,7 +292,7 @@ p{
   }
   
   .home{
-    background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.295)), url("../images/bg.jpg") !important;
+    background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.726)), url("../images/newbg.jpg") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
@@ -210,6 +301,18 @@ p{
     height:100vh !important;  /* responsive height */
   }
 
+
+
+
+  .remis-story-bg{
+
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    margin: 0 !important;
+    padding-right: 0 !important;
+    height:100vh !important;  /* responsive height */
+  }
 
 
 
@@ -243,7 +346,7 @@ p{
 
 
 .wedding{
-  background-image: linear-gradient(rgba(48, 47, 47, 0.5), rgba(0, 0, 0, 0.623)), url("../images/bgwedding-transformed.jpg") !important;
+  background-image: linear-gradient(rgba(48, 47, 47, 0.603), rgba(0, 0, 0, 0.842)), url("../images/weddingbg-2.jpg") !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
@@ -255,14 +358,10 @@ p{
 
 
 .contact{
-  background-image: linear-gradient(rgba(48, 47, 47, 0.712), rgba(0, 0, 0, 0.74)), url("../images/bg.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
   padding-right: 0 !important;
   margin: 0 !important;
   width: 100vw !important;
-  height: 100vh !important;  /* responsive height */
+  /* height: 100vh !important;  responsive height */
 }
 
 .etsy{
@@ -271,6 +370,158 @@ p{
   margin: 0 !important;
   width: 100vw !important;
 }
+
+
+
+
+
+
+
+
+.dog-graduation-page {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.dog-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.dog-card {
+  flex-basis: calc(30% - 10px); /* Adjust for gap between cards */
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgb(252, 227, 215);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.dog-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  margin: 0 auto 10px;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  color: #777;
+}
+
+.additional-info {
+  font-style: italic;
+  color: #888;
+}
+
+@media (max-width: 800px) {
+  .dog-card-container {
+    justify-content: center;
+
+  }
+  .dog-graduation-page{
+    width: 100%;
+  }
+
+  .dog-card{
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 500px){
+  .dog-card{
+    flex-basis: calc(95%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.owner-portfolio {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.owner-portfolio h2 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.owner-portfolio p {
+  margin-top: 10px;
+  color: #777;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .owner-portfolio {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .etsy-img{
@@ -292,7 +543,8 @@ p{
 }
 
 .etsy-main-width{
-  width: 80% !important;
+  max-width: 90%;
+  flex-wrap: wrap;
 }
 
 .etsy-p{
@@ -362,7 +614,7 @@ p{
 }
 
 .grad-width{
-  width: 70%;
+  max-width: 90%;
 }
 
 .white{
@@ -408,10 +660,7 @@ p{
 
 .contact-form{
   margin-top: 65px !important;
-  height: 525px;
-  width: 750px !important;
   border-radius: 16px;
-  background: rgba(247, 228, 228, 0.849) !important;
 }
 
 
@@ -553,8 +802,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    border: 1px rgb(250, 198, 172) solid;
+    border: 1px solid #ccc;
     box-shadow: 20px rgb(250, 198, 172);
     border-radius: 16px;
     text-align: center;
@@ -565,21 +813,80 @@ p{
   }
 
 .wc-div-size{
-  width: 40%;
+  width:60%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-features {
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-cards {
+  display: grid;
+  justify-content: center !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  margin-top: 0;
+}
+
+.feature-description {
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .align-ul-center{
   text-align: center !important;
 
 }
 
   .ob-info-cta{
-    height: 340px;
-    width: 575px !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 16px;
     text-align: center;
+    width: 50vw;
   }
 
   .center{
@@ -607,6 +914,51 @@ p{
     font-size: 18px;
     transition: .5s;
   }
+
+
+
+
+
+
+
+
+
+
+
+  .contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-areas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+  
+  .service-areas li {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgb(250, 198, 172);
+    border-radius: 5px;
+  }
+  
+
+
+
+
+
+
+
+
+
 
 
   
@@ -790,7 +1142,7 @@ p{
 
 .input-field-l{
   display: block;
-  width: 500px;
+  width: 80%;
   font-size: 14px;
   resize: none;
   border-radius: 4px;
@@ -997,8 +1349,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 
+@media screen and (max-width: 900px) {
+  .etsy-main-width{
+    width: 70%;
+  }
+}
 
+@media  screen and (max-width: 1000px) {
+  .mt03{
+    margin-top: 3rem !important;
+  }
+}
 
+@media screen and (max-width: 857px) {
+  .mt04{
+    margin-top: 3rem !important;
+  }
+}
 
 
 @media screen and (max-width: 650px) {
@@ -1026,6 +1393,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 15px;
 }
 }
+
+@media screen and (max-width: 991px){
+  .pb-img-height{
+    height: 250px !important;
+    width: 300px !important;
+    border-radius: 16px !important;
+  }
+
+  .pb-text-width{
+    width: 90vw !important;
+  }
+  .ob-info-cta{
+    width: 100vw;
+  }
+}
+
 
 
 @media screen and (max-width: 1120px) {
@@ -1112,18 +1495,148 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 
-.pb-text{
-  color: black;
+
+
+
+
+.dog-training-services {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
+
+.service{
+  background-color: rgb(250, 238, 232) !important;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+
+
+.puppy-basics-package {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  flex-basis: calc(30% - 20px);
+  background-color: rgb(250, 198, 172);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service img {
+  max-width: 200px !important;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.service h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.service p {
+  color: #777;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .service {
+    flex-basis: 100%;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.service h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.service p {
+  color: #777;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .service {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pb-img-height{
-  height: 300px;
-  width: 375px;
-  border-radius: 16px !important;
+  max-height: 400px;
+  height: auto;
+  width: auto;
+  border-radius: 8px !important;
 }
 
 .pb-text-width{
+  width: auto;
+  max-height: 500px ;
+}
+.container-ob{
   width: 90%;
 }
+
+.pb-text-width-2{
+  width: 90%;
+}
+
 
 .pb-font-size-header{
   font-size: 20px;

@@ -27,7 +27,6 @@ root.render(
     <>
     <BrowserRouter>
     
-    <Header/>
         <Routes>
             <Route path="/" index element={ <><ScrollToTop/> <HomePage /></>} />
             <Route path="puppy-basics" index element={<><ScrollToTop/><PuppyBasics/></>} />
