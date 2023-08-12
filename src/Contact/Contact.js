@@ -55,7 +55,7 @@ const Contact = () => {
                 <div data-aos="fade-in" data-aos-once="true" data-aos-delay="550" data-aos-duration="1000">
                 <input type="hidden" name="subject" value="New Submission from RemisDogTrainingInstitute"></input>
 
-                <input type="hidden" name="access_key" value="08d18fc7-6bae-45ee-ab65-99826bb540b6"></input>
+                <input type="hidden" name="access_key" value="78728bd5-b3e7-407f-99b3-79aae408a6f7"></input>
                 <input className="mx-auto mt-2 input-field" type="text" name="name" placeholder="Name" required/>
                 <input className="mx-auto mt-2 input-field" type="email" name="email" placeholder="Email" required/>
                 <input className="mx-auto mt-2 input-field" type="text" name="text" placeholder="Phone" required/>

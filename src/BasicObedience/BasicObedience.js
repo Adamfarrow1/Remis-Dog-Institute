@@ -78,7 +78,7 @@ const BasicObedience = () => {
                         <div className='remis-container mx-auto text-center'>
                             <p className='text-center pb-font-size-header2 underline-r'>Advanced Obedience Pricing</p>
                             <p className='text-center pb-font-size-header'>
-                                $60 for each 1 Hour PRIVATE training session
+                                $60-125 for each 1 Hour PRIVATE training session (Based on skill requested)
                                 <br />
                                 $35 for 1 hour virtual session</p>
                                 <p className='text-center pb-font-size'>To find our more about our training or to start scheduling sessions contact me below</p>

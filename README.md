@@ -23,7 +23,7 @@ Welcome to Remi's Dog Training Institute, where we're dedicated to fostering str
 
 ## Getting Started
 
-Visit our website: [Remi's Dog Training Institute](https://www.remisdogtraininginstitute.com). Our website is designed to provide a seamless experience on various devices, ensuring easy access to information for all visitors.
+Visit our website: [Remi's Dog Training Institute](https://www.remisdogtraining.com). Our website is designed to provide a seamless experience on various devices, ensuring easy access to information for all visitors.
 
 ## Technologies Used
 
