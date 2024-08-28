@@ -51,9 +51,7 @@ const BasicObedience = () => {
                     <div className='remis-container mx-auto'>
                         <p className='text-center pb-font-size-header2 underline-r'>Basic Obedience Pricing</p>
                         <p className='text-center pb-font-size-header'>
-                            $60 for each 1 Hour PRIVATE training session
-                            <br />
-                            $35 for 1 hour virtual session</p>
+                        Contact for pricing</p>
                             <p className='text-center pb-font-size'>To find our more about our training or to start scheduling sessions contact me below</p>
                             <Link to="/contact" className='td-none'><p className='story-cta remis-text remis-cta mx-auto text-center mt-4'>Contact</p></Link>
                     </div>
@@ -78,9 +76,7 @@ const BasicObedience = () => {
                         <div className='remis-container mx-auto text-center'>
                             <p className='text-center pb-font-size-header2 underline-r'>Advanced Obedience Pricing</p>
                             <p className='text-center pb-font-size-header'>
-                                $60-125 for each 1 Hour PRIVATE training session (Based on skill requested)
-                                <br />
-                                $35 for 1 hour virtual session</p>
+                                Contact for pricing (Based on skill requested)</p>
                                 <p className='text-center pb-font-size'>To find our more about our training or to start scheduling sessions contact me below</p>
                                 <Link to="/contact" className='td-none'><p className='story-cta remis-text remis-cta mx-auto text-center mt-4'>Contact</p></Link>
                         </div>

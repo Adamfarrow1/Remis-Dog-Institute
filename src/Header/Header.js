@@ -48,7 +48,7 @@ const Header = () => {
     const style1 = 'd-flex justify-content-between align-items-center'
 
     return ( 
-        <div className={width < 1000 ? style1 : style1 + " header-background"}>
+        <div className={width < 1276 ? style1 : style1 + " header-background"}>
             <div className='d-flex align-items-center'>
                 <Link to={'/'} className='hover'><img className='img-height' src={logo} alt="" /> </Link>
                 {width >= 600 ?
@@ -57,7 +57,7 @@ const Header = () => {
                 }
             </div>
 
-            { width >= 1000 ? 
+            { width >= 1276 ? 
             <div className='d-flex align-items-center'>
                 <Link className='nav-link' to={'/'}>Home</Link>
 
@@ -94,7 +94,7 @@ const Header = () => {
                 </CDropdown>
 
 
-
+            <Link to='/what-we-offer' className='td-none'> <p className='nav-link' >What We Offer</p></Link>
                <Link to='/contact' className='td-none'> <p className='contact-me far-right' >Contact</p></Link>
             </div>
              :
@@ -128,7 +128,7 @@ const Header = () => {
                     </CDropdown>
 
 
-
+                    <Link to='/what-we-offer' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile'>What We Offer</p></Link>
                     <Link to='/contact' className='td-none'> <p onClick={closeSideBar} className='nav-link-mobile' >Contact</p></Link>
                 </Menu>
            </>

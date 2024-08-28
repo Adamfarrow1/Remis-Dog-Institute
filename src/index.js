@@ -1,16 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css'
-import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.css';
-import Home from './home/Home.js'
-import HomeCarousel from './home/HomeCarousel';
 import Footer from './footer/Footer';
-
-import Remishome from './home/Remishome';
-
 import HomePage from './pages/HomePage';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PuppyBasics from './PuppyBasics/PuppyBasics';
 
@@ -22,6 +15,7 @@ import EtsyShop from './EtsyShop/EtsyShop';
 import Gallery from './gallery/Gallery';
 import RemisStory from './About/RemisStory';
 import Owner from './About/Owner';
+import WhatWeOffer from './WhatweOffer/WhatWeOffer.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
@@ -37,6 +31,7 @@ root.render(
             <Route path="gallery" index element={<><ScrollToTop/><Gallery/></>} />
             <Route path="remis-story" index element={<><ScrollToTop/><RemisStory/></>} />
             <Route path="owners-story" index element={<><ScrollToTop/><Owner/></>} />
+            <Route path="what-we-offer" index element={<><ScrollToTop/><WhatWeOffer/></>} />
         </Routes>
         <Footer/>
     </BrowserRouter>

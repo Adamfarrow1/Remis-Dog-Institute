@@ -141,9 +141,7 @@ const PuppyBasics = () => {
                     <div className='remis-container mx-auto'>
                         <p className='text-center pb-font-size-header2 underline-r'>Pricing</p>
                         <p className='text-center pb-font-size-header'>
-                            $60 for each 1 Hour PRIVATE training session
-                            <br />
-                            5 Training Sessions for $275</p>
+                            Contact for Pricing</p>
                             <p className='text-center pb-font-size'>To find our more about our puppy basics training or to start scheduling sessions contact me below</p>
                             <Link to="/contact" className='td-none'><p className='story-cta remis-text remis-cta mx-auto text-center mt-4'>Contact</p></Link>
                     </div>

@@ -51,7 +51,7 @@ const WeddingCare = () => {
                                     <li>Become your furry friends new best friend.</li>
                                     <li>Includes Pick up/Drop off dog transportation if location and venue are within 30 miles of Orlando*</li>
                                 </ul>
-                                <p className='mt-auto'>Rates: $300 for 3 hours <br /> $50 each additional hour / $50/hr for additional dog.</p>
+                                <p className='mt-auto'>Rates: Contact for pricing</p>
                        
                         </div>
 
@@ -66,7 +66,7 @@ const WeddingCare = () => {
                                     <li>Engage your dog so they may be part of the photo taking experience.</li>
                                     <li>Includes Pick up/Drop off dog transportation if location and venue are within 30 miles of Orlando*</li>
                                 </ul>
-                                <p className='mt-auto'>Rates: $375 for 3 hours <br /> $50 each additional hour / $50/hr for additional dog.</p>
+                                <p className='mt-auto'>Rates: Contact for pricing</p>
                         
                         </div>
   
@@ -81,7 +81,7 @@ const WeddingCare = () => {
                                     <li>Take your dog for Walks</li>
                                     <li>1 training session to get your dog ready with a learned behavior such as carrying a basket, walking down the aisle or a behavior that is special to you all**</li>
                                 </ul>
-                                <p className=''>Rates: $425 for 3 hours <br /> $50 each additional hour / $50/hr for additional dog.</p>
+                                <p className=''>Rates: Contact for pricing</p>
   
                         </div>
                  
@@ -98,7 +98,7 @@ const WeddingCare = () => {
     <div className=" mt-5 text-center" data-aos="fade-in" data-aos-once="false" data-aos-delay="150" data-aos-duration="1000">
         <p className='carousel-h1 text-center underline mb-5 mt-5'>Photo Shoot / Engagement Photos</p> 
         <p className='wc-text-width text-center mx-auto'>We understand how important it is to capture the perfect photo of your furry friend. That's why I will go above and beyond to ensure that your dog looks their best for the photo shoot. We understand that every dog is unique, and we will take the time to understand your preferences and expectations to deliver exceptional results. With our dedication and expertise, you can trust us to make your dog look stunning for the photo shoot!</p>
-        <p>Rates: $55 per 1 hour session <br />$30 for any additional hour and/or animal</p>
+        <p>Rates: Contact for pricing</p>
     </div>
 
     <div className=" mt-5 text-center" data-aos="fade-in" data-aos-once="false" data-aos-delay="150" data-aos-duration="1000">
@@ -114,7 +114,7 @@ const WeddingCare = () => {
                     <li>And More!</li>
                 </ul> */}
             </div>
-        <p className='mt-5 remis-container mx-auto'>$50 per 1 hour session & Must have a Wedding Day Pet Care Package already. </p>
+     
     </div>
     <div className=' remis-text-border shadow mx-auto mb-5 '>
         <div className='remis-container mx-auto'>
