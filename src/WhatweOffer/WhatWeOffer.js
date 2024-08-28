@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/CompanyOfferingsPage.css'; // Import the CSS file
 import Header from '../Header/Header';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const offerings = [
   { title: 'Private Training', description: 'One-on-one training sessions tailored to your dog’s specific needs.' },
@@ -18,11 +16,12 @@ const offerings = [
 const WhatWeOffer = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  // Initialize AOS
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
+    const listItems = document.querySelectorAll('.list-item');
+    listItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add('fade-in');
+      }, index * 150); // Delay each item by 150ms
     });
   }, []);
 
@@ -41,8 +40,6 @@ const WhatWeOffer = () => {
               key={index}
               className="list-item"
               onClick={() => toggleDescription(index)}
-              data-aos="fade-in"
-              data-aos-delay={`${index * 150}`} // Increment delay by 150ms for each item
             >
               <div className="title-container">
                 <h2 className="title">{offering.title}</h2>
