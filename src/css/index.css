@@ -334,9 +334,9 @@ p{
 
 .ob{
 
-  background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.295)), url("../images/remis2.jpg") !important;
+  background-image: linear-gradient(rgba(70, 69, 69, 0.5), rgba(2, 2, 2, 0.295)), url("../images/new_ob_img (1).jpg") !important;
   background-repeat: no-repeat !important;
-  background-position: center  !important; /* Adjust the value as needed */
+  background-position: top  !important; /* Adjust the value as needed */
   background-size: cover !important;
   padding-right: 0 !important;
   margin: 0 !important;

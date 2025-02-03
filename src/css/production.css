@@ -1,0 +1,213 @@
+.production-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.production-title {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.production-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #ffb6c1;
+}
+
+.production-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.production-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.production-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.production-item:hover {
+  transform: translateY(-5px);
+}
+
+.production-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .production-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .production-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .production-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .production-container {
+    padding: 1rem;
+  }
+
+  .production-title {
+    font-size: 2rem;
+  }
+}
+
+.media-gallery,
+.join-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-gallery h2,
+.join-form h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-placeholder {
+  background-color: #f8f8f8;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+}
+
+.form-coming-soon {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.form-description {
+  text-align: center;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ... (keep existing styles) */
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel-slide {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  
+}
+
+.carousel-slide img,
+.carousel-slide video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Custom styling for Slick carousel */
+.slick-slider {
+  margin-bottom: 40px; /* Increase bottom margin to accommodate dots */
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: #333;
+}
+
+.slick-dots {
+  bottom: -35px; /* Move dots further below the carousel */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #666;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+/* ... (keep other existing styles) */
+

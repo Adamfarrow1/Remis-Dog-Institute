@@ -48,7 +48,7 @@ const Header = () => {
     const style1 = 'd-flex justify-content-between align-items-center'
 
     return ( 
-        <div className={width < 1276 ? style1 : style1 + " header-background"}>
+        <div className={width < 1440 ? style1 : style1 + " header-background"}>
             <div className='d-flex align-items-center'>
                 <Link to={'/'} className='hover'><img className='img-height' src={logo} alt="" /> </Link>
                 {width >= 600 ?
@@ -57,7 +57,7 @@ const Header = () => {
                 }
             </div>
 
-            { width >= 1276 ? 
+            { width >= 1440 ? 
             <div className='d-flex align-items-center'>
                 <Link className='nav-link' to={'/'}>Home</Link>
 
@@ -79,7 +79,7 @@ const Header = () => {
 
                 {/* <p className='nav-link'>Training Services</p> */}
                 <Link to='/weddingcare' className='td-none'><p className='nav-link td-none'>Wedding Pet Care</p></Link>
-                
+                <Link to='/production' className='td-none'><p className='nav-link td-none'>Production</p></Link>
                 <Link to='/etsyshop' className='td-none'><p className='nav-link'>Etsy Shop</p></Link>
                 <Link to='/gallery' className='td-none'><p className='nav-link'>Gallery</p></Link>
                 
@@ -114,6 +114,7 @@ const Header = () => {
 
                     {/* <p className='nav-link-mobile'>Training Services</p> */}
                     <Link to='/weddingcare' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile td-none'>Wedding Pet Care</p></Link>
+                    <Link to='/production' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile td-none'>Production</p></Link>
                     <Link to='/etsyshop' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile'>Etsy Shop</p></Link>
                     <Link to='/gallery' className='td-none'><p onClick={closeSideBar} className='nav-link-mobile'>Gallery</p></Link>
                     

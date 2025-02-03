@@ -6,7 +6,7 @@ import Footer from './footer/Footer';
 import HomePage from './pages/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PuppyBasics from './PuppyBasics/PuppyBasics';
-
+import ProductionInfo from './production/production.js';
 import ScrollToTop from './customhooks/ScrollToTop';
 import BasicObedience from './BasicObedience/BasicObedience';
 import WeddingCare from './WeddingCare/WeddingCare';
@@ -26,6 +26,8 @@ root.render(
             <Route path="puppy-basics" index element={<><ScrollToTop/><PuppyBasics/></>} />
             <Route path="basic-obedience" index element={<><ScrollToTop/><BasicObedience/></>} />
             <Route path="weddingcare" index element={<><ScrollToTop/><WeddingCare/></>} />
+            <Route path="production" index element={<><ScrollToTop/><ProductionInfo/></>} />
+            <Route path="what-we-offer" index element={<><ScrollToTop/><WhatWeOffer/></>} />
             <Route path="contact" index element={<><ScrollToTop/><Contact/></>} />
             <Route path="etsyshop" index element={<><ScrollToTop/><EtsyShop/></>} />
             <Route path="gallery" index element={<><ScrollToTop/><Gallery/></>} />
