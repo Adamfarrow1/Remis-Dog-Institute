@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Header from "../Header/Header"
 import Slider from "react-slick"
 import AOS from "aos"
@@ -23,6 +23,7 @@ import vid4 from "../images/production/vid4.mov"
 
 const ProductionInfo = () => {
   const sliderRef = useRef(null)
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   const productionWork = [
     "Dolly Parton's Pet Gala",
@@ -73,7 +74,7 @@ const ProductionInfo = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: !isVideoPlaying,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     adaptiveHeight: false,
@@ -89,11 +90,29 @@ const ProductionInfo = () => {
     beforeChange: (current, next) => {
       // Pause all videos when changing slides
       const videos = document.querySelectorAll(".carousel-slide video")
-      videos.forEach((video) => video.pause())
+      videos.forEach((video) => {
+        video.pause()
+      })
+      setIsVideoPlaying(false)
     },
   }
 
+  const handleVideoPlay = () => {
+    setIsVideoPlaying(true)
+    if (sliderRef.current) {
+      sliderRef.current.slickPause()
+    }
+  }
+
+  const handleVideoPause = () => {
+    setIsVideoPlaying(false)
+    if (sliderRef.current) {
+      sliderRef.current.slickPlay()
+    }
+  }
+
   const handleVideoEnded = (index) => {
+    setIsVideoPlaying(false)
     if (sliderRef.current) {
       sliderRef.current.slickNext()
     }
@@ -135,7 +154,14 @@ const ProductionInfo = () => {
                   {media.type === "image" ? (
                     <img src={media.src || "/placeholder.svg"} alt={`Production work ${index + 1}`} />
                   ) : (
-                    <video src={media.src} controls onEnded={() => handleVideoEnded(index)} playsInline />
+                    <video
+                      src={media.src}
+                      controls
+                      onPlay={handleVideoPlay}
+                      onPause={handleVideoPause}
+                      onEnded={() => handleVideoEnded(index)}
+                      playsInline
+                    />
                   )}
                 </div>
               ))}
